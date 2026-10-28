@@ -11,7 +11,8 @@ Equipe SoulUp, turma 1TDSPO
 
 | Item | Link |
 |---|---|
-| API publicada | pendente |
+| API publicada | https://soulup-api-7h17.onrender.com |
+| Repositório da API | https://github.com/matheusruiz-07/soulup-api |
 | Front-end | https://github.com/matheusruiz-07/Challenge-1TDSPO |
 
 ## Tecnologias
@@ -63,7 +64,9 @@ No IntelliJ, também dá para importar a pasta como projeto Maven, colocar `DB_P
 
 ## Deploy
 
-O deploy é feito no Render a partir do `Dockerfile`. As variáveis `DB_PASSWORD` (e, se precisar, `DB_URL` e `DB_USER`) são cadastradas no painel do Render, nunca no repositório. O Render informa a porta pela variável `PORT`, que a aplicação já lê.
+O deploy é feito no Render a partir do `Dockerfile` e do `render.yaml`. As variáveis `DB_PASSWORD` (e, se precisar, `DB_URL` e `DB_USER`) são cadastradas no painel do Render, nunca no repositório. O Render informa a porta pela variável `PORT`, que a aplicação já lê.
+
+No plano gratuito o Render desliga a API depois de 15 minutos sem uso. A primeira requisição depois disso leva cerca de 50 segundos para responder; as seguintes são normais.
 
 ## Endpoints
 
