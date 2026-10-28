@@ -1,0 +1,12 @@
+# Configuracao de deploy no Render (Blueprint).
+# A senha do Oracle (DB_PASSWORD) e informada no painel do Render, nunca neste arquivo.
+services:
+  - type: web
+    name: soulup-api
+    runtime: docker
+    plan: free
+    region: virginia
+    healthCheckPath: /
+    envVars:
+      - key: DB_PASSWORD
+        sync: false
